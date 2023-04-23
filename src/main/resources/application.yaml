@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: WeatherPrediction
+    description: WeatherPrediction API
+    version: 1.0
+logging:
+  level:
+    root: info
+server:
+  port: 8080
+  error:
+    whitelabel:
+      enabled: false
+
+# swagger-ui custom path
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+
+#backend endpoint
+backend:
+  endpoint: 'https://api.openweathermap.org/data/2.5/forecast?'
+
